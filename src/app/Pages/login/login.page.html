@@ -1,13 +1,13 @@
 <ion-header>
-  <ion-toolbar color="secondary">
-    <ion-title>login</ion-title>
+  <ion-toolbar color="secondary" class="center">
+    <ion-title>Iniciar Sesion</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="center">
+  <div class="contcenter">
     <app-logo></app-logo>
-    <h1>Iniciar Sesion</h1>
+    <h3>Inicia Sesion en MultiServiciosApp</h3>
   </div>
 
   <form>
@@ -23,10 +23,11 @@
       </ion-item>
 
       <ion-item>
-        <p>Ya tienes una cuenta?</p><a href='/signup'>Crea una cuenta</a>
+        No tienes una cuenta?&nbsp;&nbsp;
+        <a href='/signup'>Registrate</a>
       </ion-item>
 
-      <ion-button expand="block" shape='round' color="success">Iniciar Sesion</ion-button>
+      <ion-button expand="block" shape='round' color="success" href='/home'>Iniciar Sesion</ion-button>
     </ion-list>
   </form>
 </ion-content>

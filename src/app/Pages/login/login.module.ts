@@ -19,4 +19,4 @@ import { ComponentsModule } from 'src/app/Components/components.module';
   ],
   declarations: [LoginPage]
 })
-export class LoginPageModule {}
+export class LoginPageModule { }
