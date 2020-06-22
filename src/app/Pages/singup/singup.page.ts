@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-singup',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingupPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  registrate(){
+    this.router.navigate(['/login'])
+  }
+  navigateToTypeOfLogin() {
+    this.router.navigate(['type-of-login']);
   }
 
 }

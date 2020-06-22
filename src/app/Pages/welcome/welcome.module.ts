@@ -13,7 +13,7 @@ import { ComponentsModule } from 'src/app/Components/components.module';
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
+    IonicModule.forRoot(),
     ComponentsModule,
     WelcomePageRoutingModule
   ],

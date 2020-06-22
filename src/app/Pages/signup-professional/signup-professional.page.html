@@ -1,0 +1,123 @@
+<ion-header>
+  <ion-row>
+      <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/type-of-login"></ion-back-button>
+        </ion-buttons>
+          <ion-col size-lg="12" size-md="12" size-sm="12" size="12">
+            <ion-title>
+              Registrarse
+              como profesional</ion-title>
+          </ion-col>
+      </ion-toolbar>
+  </ion-row>
+</ion-header>
+
+<ion-content>
+  <form slot="fixed">
+    <ion-grid>
+
+      <ion-row>
+        <ion-col size-lg="12" size-md="12" size-sm="12" size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Registrate como profesional para poder ofertar tus servicios al publico Nicaraguense!
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size-lg="3" size-md="6" size-sm="6" size="12">
+          <ion-item>
+            <ion-label position="floating">Nombre</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size-lg="3" size-md="6" size-sm="6" size="12">
+          <ion-item>
+            <ion-label position="floating">Apellido</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size-lg="3" size-md="6" size-sm="6" size="12">
+          <ion-item>
+            <ion-label position="floating">Correo Electronico</ion-label>
+            <ion-input type="email"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size-lg="3" size-md="6" size-sm="6" size="12">
+          <ion-item>
+            <ion-label position="floating">Ciudad</ion-label>
+            <ion-select value="usa" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="usa">Managua</ion-select-option>
+              <ion-select-option value="india">Granada</ion-select-option>
+              <ion-select-option value="france">Masaya</ion-select-option>
+              <ion-select-option value="spain">Puerto Cabezas</ion-select-option>
+              <ion-select-option value="brazil">Bluefields</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size-lg="3" size-md="6" size-sm="6" size="12">
+          <ion-item>
+            <ion-label position="floating">Municipio</ion-label>
+            <ion-select value="california" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="california">Mateare</ion-select-option>
+              <ion-select-option value="illinois">Managua</ion-select-option>
+              <ion-select-option value="texas">Masaya</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size-lg="3" size-md="6" size-sm="6" size="12">
+          <ion-item>
+            <ion-label position="floating" style="color:teal">Servicios que ofreces</ion-label>
+            <ion-select multiple="true" cancelText="Cancelar" okText="Guardar servicios">
+              <ion-select-option value="bacon">Jardineria</ion-select-option>
+              <ion-select-option value="olives">Construccion</ion-select-option>
+              <ion-select-option value="xcheese">Informatica</ion-select-option>
+              <ion-select-option value="peppers">Belleza (UNISEX)</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size-lg="3" size-md="6" size-sm="6" size="12">
+          <ion-item>
+            <ion-label position="floating">Direccion</ion-label>
+            <ion-textarea></ion-textarea>
+          </ion-item>
+        </ion-col>
+        <ion-col size-lg="3" size-md="6" size-sm="6" size="12">
+          <ion-item>
+            <ion-label position="floating">Postal Code</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size-lg="3" size-md="6" size-sm="6" size="12">
+          <ion-item>
+            <ion-label position="floating">Genero</ion-label>
+            <ion-select value="male" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="male">Masculino</ion-select-option>
+              <ion-select-option value="female">Femenino</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+
+        <ion-col size-lg="3" size-md="6" size-sm="6" size="12">
+          <ion-item>
+            <ion-label position="floating">Edad</ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+
+      </ion-row>
+
+      <ion-row>
+        <ion-col size-lg="6" size-md="6" size-sm="6" size="12" class="btnregistercolstyle">
+          <ion-button ion-button type="submit" (click)='registrate()' shape='round' color="success" style="float:none;margin:auto;">
+            Registrarse
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

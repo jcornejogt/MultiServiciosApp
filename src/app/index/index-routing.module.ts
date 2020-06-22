@@ -19,6 +19,15 @@ const routes: Routes = [
         path: 'signup',
         loadChildren: () => import('../Pages/singup/singup.module').then(m => m.SingupPageModule)
       }
+      ,
+      {
+        path: 'typeoflogin',
+        loadChildren: () => import('../Pages/typeoflogin/type-of-login.module').then(m => m.TypeOfLoginPageModule)
+      } ,
+      {
+        path: 'signuppro',
+        loadChildren: () => import('../Pages/signup-professional/signup-professional.module').then(m => m.SignupProfessionalPageModule)
+      }
     ]
   },
 ];

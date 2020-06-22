@@ -1,9 +1,13 @@
-ion-slide{
-    padding-top: 60px;
-    padding-bottom: 0px;
-    display: block;
-    h2{
-        font-size: 36px;
-        font-weight: bold;
-    }
+ion-slide {
+  padding-top: 50px;
+  display: inline-block;
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+}
+
+ion-content {
+  height: 90%;
+  width: 100%;
 }

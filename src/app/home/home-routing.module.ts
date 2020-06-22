@@ -18,11 +18,11 @@ const routes: Routes = [
       },
       {
         path: 'messages',
-        loadChildren: () => import('../Pages/singup/singup.module').then(m => m.SingupPageModule)
+        loadChildren: () => import('../Pages/messages/messages.module').then(m => m.MessagesPageModule)
       },
       {
         path: 'settings',
-        loadChildren: () => import('../Pages/singup/singup.module').then(m => m.SingupPageModule)
+        loadChildren: () => import('../Pages/settings/settings.module').then(m => m.SettingsPageModule)
       }
     ]
   },
